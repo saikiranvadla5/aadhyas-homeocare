@@ -1,0 +1,39 @@
+{
+  "name": "aadhyas-homoeocare",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3005",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@heroicons/react": "2.1.5",
+    "@hookform/resolvers": "3.3.1",
+    "@prisma/client": "5.15.0",
+    "@tailwindcss/forms": "0.5.7",
+    "@tailwindcss/typography": "^0.5.20",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "2.4.3",
+    "framer-motion": "11.5.5",
+    "next": "14.2.3",
+    "next-auth": "4.24.7",
+    "next-seo": "6.5.0",
+    "prisma": "5.15.0",
+    "react": "18.3.0",
+    "react-dom": "18.3.0",
+    "react-hook-form": "7.49.3",
+    "tailwindcss": "3.4.3",
+    "typescript": "5.4.5",
+    "yup": "1.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "^10.6.2"
+  }
+}

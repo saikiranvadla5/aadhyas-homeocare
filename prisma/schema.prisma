@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Enquiry {
+  id                Int      @id @default(autoincrement())
+  name              String
+  phone             String
+  email             String?
+  consultationDate  DateTime
+  preferredTime     String
+  method            ConsultationMethod
+  message           String?
+  status            EnquiryStatus @default(NEW)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  adminNote         String?
+}
+
+enum ConsultationMethod {
+  IN_PERSON
+  ONLINE
+}
+
+enum EnquiryStatus {
+  NEW
+  CONTACTED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+model Service {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  icon        String
+  enabled     Boolean @default(true)
+  order       Int @default(0)
+}
+
+model Doctor {
+  id              Int    @id @default(autoincrement())
+  name            String
+  qualifications  String
+  registration    String
+  bio             String?
+  photoUrl        String?
+  education       String?
+  interests       String?
+  philosophy      String?
+}
+
+model Setting {
+  key   String @id
+  value String
+}
+
