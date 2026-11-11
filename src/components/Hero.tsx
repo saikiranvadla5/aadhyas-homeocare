@@ -39,12 +39,17 @@ export function Hero() {
             </p>
 
             {/* Doctor Credential Tag */}
-            <div className="inline-flex items-center gap-3 p-2.5 px-4 rounded-xl bg-white/70 border border-[#DDD3C1] shadow-sm backdrop-blur-sm">
-              <div className="w-2.5 h-2.5 rounded-full bg-emerald-600"></div>
-              <p className="text-xs sm:text-sm text-darkText">
-                Led by <strong className="text-deepTeal">Dr. Shivani Amoji</strong>, <span className="text-darkText/70">BHMS, MSc Psychology</span> &bull; <span className="text-xs font-mono text-mutedOrange">Reg. No: 740/H/22</span>
-              </p>
-            </div>
+<div className="inline-flex items-center gap-3 p-2.5 px-4 rounded-xl bg-white/70 border border-[#DDD3C1] shadow-sm backdrop-blur-sm">
+  <div className="w-2.5 h-2.5 rounded-full bg-emerald-600"></div>
+  <p className="text-xs sm:text-sm text-darkText">
+    Led by <strong className="text-deepTeal">Dr. Shivani Amoji</strong>, <span className="text-darkText/70">BHMS, MSc Psychology</span> &bull; <span className="text-xs font-mono text-mutedOrange">Reg. No: 740/H/22</span>
+  </p>
+</div>
+            {/* Clinic Hours Badge */}
+<div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/60 border border-[#DDD3C1] text-xs text-darkText/80">
+  <span className="w-2 h-2 rounded-full bg-deepTeal"></span>
+  <span>Consultations: <strong>Mon – Sat</strong> (10:00 AM – 08:00 PM)</span>
+</div>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
