@@ -111,3 +111,4 @@ This updates both your local `.env` and the PostgreSQL database `Setting` table 
 
 ## 📄 License
 &copy; 2026 Aadhya's Homoeo Care. All rights reserved.
+

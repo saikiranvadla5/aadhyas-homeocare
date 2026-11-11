@@ -36,3 +36,4 @@ next-env.d.ts
 
 # Prisma
 # Keep prisma schema and migrations, ignore local sqlite if any
+
